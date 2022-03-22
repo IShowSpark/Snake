@@ -63,5 +63,13 @@ namespace Snake
         }
         public void WriteScore()
         {
-            using (StreamWriter file = new StreamWriter(@"..\..\leaderboard.txt"))
+            //using (StreamWriter file = new StreamWriter(@"..\..\leaderboard.txt"))
             {
+                //for (int i = 0; i < 10; i++)
+                {
+                   //file.WriteLine(scores[i] + " " + names[i]);
+                }
+            }
+        }
+    }
+}

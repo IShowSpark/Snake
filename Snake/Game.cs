@@ -57,7 +57,7 @@ namespace Snake
 				key = Console.ReadKey(true); //опять же настраиваем кнопки
 				if (key.Key == ConsoleKey.D1) //при нажатии на 1 ставится такой пресет
 				{
-					colours = new ConsoleColor[] { ConsoleColor.DarkBlue, ConsoleColor.DarkBlue, ConsoleColor.White, ConsoleColor.Cyan }; //тут мы меняем цвет и т.п
+					colours = new ConsoleColor[] { ConsoleColor.Black, ConsoleColor.Black, ConsoleColor.White, ConsoleColor.Red }; //тут мы меняем цвет и т.п
 					syms = new char[] { '-', '%', '.' };
 				}
 				else if (key.Key == ConsoleKey.D2) //так же при нажатии на цифру 2 ставится такой пресет
@@ -68,7 +68,7 @@ namespace Snake
 				else if (key.Key == ConsoleKey.D3) //при нажатии на цифру 3
 				{
 					colours = new ConsoleColor[] { ConsoleColor.White, ConsoleColor.White, ConsoleColor.White, ConsoleColor.Black }; //тут мы меняем цвет и т.п
-					syms = new char[] { '%', '1', '!' };
+					syms = new char[] { '%', '*', '§' };
 				}
 				else if (key.Key == ConsoleKey.D4) //при нажатии на цифру 4 у нас возвращается назад все к меню
 				{
