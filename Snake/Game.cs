@@ -45,7 +45,7 @@ namespace Snake
 				}
 				else if (key.Key == ConsoleKey.D4) //выход из игры
 				{
-					Console.Clear();
+					break;
 				}
 			} while (true);
 		}
@@ -121,7 +121,6 @@ namespace Snake
 			{
 				WriteText(M[i], xOffset, yOffset++);
 			}
-			WriteText(M[0], xOffset, yOffset++);
 		}
 	}
 

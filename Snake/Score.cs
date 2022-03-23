@@ -31,7 +31,7 @@ namespace Snake
         }
         public void SortBoard()
         {
-            using (StreamReader f = new StreamReader(@"..\..\leaderboard.txt"))
+            using (StreamReader f = new StreamReader(@"..\leaderboard.txt"))
             {
                 for (int i = 0; i < 10; i++)
                 {
@@ -63,12 +63,9 @@ namespace Snake
         }
         public void WriteScore()
         {
-            //using (StreamWriter file = new StreamWriter(@"..\..\leaderboard.txt"))
+            using (StreamWriter file = new StreamWriter(@"..\leaderboard.txt",true))
             {
-                //for (int i = 0; i < 10; i++)
-                {
-                   //file.WriteLine(scores[i] + " " + names[i]);
-                }
+                file.WriteLine("Ты проиграл");
             }
         }
     }

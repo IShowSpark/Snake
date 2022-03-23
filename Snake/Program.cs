@@ -64,6 +64,7 @@ namespace Snake
 			game.WriteGameOver(score.score);
 			Thread.Sleep(3000);
 			Console.ReadKey(true);
+			score.WriteScore();
 		}
 		static void Main(string[] args)
 		{
